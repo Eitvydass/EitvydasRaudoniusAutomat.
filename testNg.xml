@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="January 14 Suite">
+    <test name="TestNG">
+        <classes>
+            <class name="tests.LogInTest"/>
+            <class name="tests.CategoryTest"/>
+        </classes>
+    </test>
+</suite>
