@@ -5,20 +5,24 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utils.WaitUtils;
 
 import static org.testng.Assert.assertTrue;
-import static utils.WaitUtils.waitForElementToBeClickable;
 
 public class LogInPage {
 
     public WebDriver driver;
 
-    public By bannerButton = By.id("onetrust-accept-btn-handler");
+
     public By accountButton = By.id("user-block");
+    public By loginBlock1 = By.xpath("//div[@class='user-hdr' and text()='Prisijungti']");
+    public By registrationForm1 = By.xpath("//div[@class='user-hdr' and text()='Tapti EUROVAISTINĖ INTERNETE lojalumo klubo nariu']");
     public By email = By.id("customer_registration_email");
     public By password = By.id("customer_registration_user_plainPassword_first");
-    public By repeatPassword= By.id("customer_registration_user_plainPassword_second");
+    public By repeatPassword = By.id("customer_registration_user_plainPassword_second");
+    public By checkBx1 = By.id("customer_registration_marketing_generalOffers");
+    public By checkBx2 = By.id("customer_registration_marketing_personalOffers");
+    public By checkBx3 = By.id("customer_registration_marketing_typeEmail");
+    public By hoverMove = By.cssSelector(".register-login");
     public By registrationButtonClick = By.cssSelector(".register-login");
 
 
@@ -27,9 +31,6 @@ public class LogInPage {
         this.driver = driver;
     }
 
-    public void clickBannerButton() {
-        driver.findElement(bannerButton).click();
-    }
 
     public void clickOnAccountButton() {
         driver.findElement(accountButton).click();
@@ -38,7 +39,7 @@ public class LogInPage {
     }
 
     public void enterEmailAndPassword() {
-        WebElement registrationForm = driver.findElement(By.xpath("//div[@class='user-hdr' and text()='Tapti EUROVAISTINĖ INTERNETE lojalumo klubo nariu']"));
+        WebElement registrationForm = driver.findElement(registrationForm1);
         boolean registrationFormisDisplayed = registrationForm.isDisplayed();
 
         if (registrationFormisDisplayed) {
@@ -52,17 +53,17 @@ public class LogInPage {
     }
 
     public void checkBox1() {
-        WebElement checkBoxInput1 = driver.findElement(By.id("customer_registration_marketing_generalOffers"));
+        WebElement checkBoxInput1 = driver.findElement(checkBx1);
         checkBoxInput1.click();
     }
 
     public void checkBox2() {
-        WebElement checkBoxInput2 = driver.findElement(By.id("customer_registration_marketing_personalOffers"));
+        WebElement checkBoxInput2 = driver.findElement(checkBx2);
         checkBoxInput2.click();
     }
 
     public void checkBox3() {
-        WebElement checkBoxInput3 = driver.findElement(By.id("customer_registration_marketing_typeEmail"));
+        WebElement checkBoxInput3 = driver.findElement(checkBx3);
         checkBoxInput3.click();
     }
 
@@ -74,10 +75,9 @@ public class LogInPage {
 
     public void hoverRegistrationButton() {
         Actions hover = new Actions(driver);
-        WebElement Elem_to_hover = driver.findElement(By.cssSelector(".register-login"));
-        hover.moveToElement(Elem_to_hover);
-        hover.build();
-        hover.perform();
+        WebElement Elem_to_hover = driver.findElement(hoverMove);
+        hover.moveToElement(Elem_to_hover).build().perform();
+
     }
 
     public void clickOnRegistrationButton() {
@@ -87,4 +87,16 @@ public class LogInPage {
     }
 
 
+    public void registrationFormInput() {
+        WebElement registrationForm = driver.findElement(registrationForm1);
+        boolean registrationFormIsDisplayed = registrationForm.isDisplayed();
+        assertTrue(registrationFormIsDisplayed, "Registration form is not displayed");
+    }
+
+
+    public void loginBlockInput() {
+        WebElement loginBlock = driver.findElement(loginBlock1);
+        boolean loginBlockisDisplayed = loginBlock.isDisplayed();
+        assertTrue(loginBlockisDisplayed, "Login block is not displayed");
+    }
 }

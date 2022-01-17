@@ -26,9 +26,9 @@ public class WaitUtils {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator)));
     }
 
-    public static void waitForElementToBeDisplayedSearch(WebDriver driver, String locator, int timeout) {
+    public static void waitForElementToBeDisplayed(WebDriver driver, String locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
 

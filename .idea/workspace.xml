@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4444c2ff-7895-424e-8cb3-02afd5ca8b42" name="Changes" comment="" />
+    <list default="true" id="4444c2ff-7895-424e-8cb3-02afd5ca8b42" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/pages/CategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/pages/CategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/pages/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/tests/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/tests/CategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/tests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/tests/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/utils/WaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EitvydasRaudoniusAutomat/src/test/java/utils/WaitUtils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +27,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../EitvydasRaudoniusAutomat" />
+  </component>
   <component name="ProjectId" id="23gGbqFQdT8v8LJNcCqIAqW0tNz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,11 +40,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/AkademijaIT/Baigtas.Testavimas/Automatinis testavimas/Testavimas.justin/JustinaStankiene-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="TestNG.LogInTest">
+  <component name="RunManager" selected="TestNG.CategoryTest.addItemsToCart">
     <configuration name="CategoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EitvydasRaudoniusAutomat." />
       <extension name="coverage">
@@ -121,9 +136,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CategoryTest.addItemsToCart" />
         <item itemvalue="TestNG.LogInTest" />
         <item itemvalue="TestNG.CategoryTest" />
-        <item itemvalue="TestNG.CategoryTest.addItemsToCart" />
         <item itemvalue="TestNG.LogInTest.infoInputToLoginPage" />
         <item itemvalue="TestNG.LogInTest.enterLoginPage" />
       </list>
@@ -137,11 +152,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642148392737</updated>
-      <workItem from="1642148394281" duration="29365000" />
+      <workItem from="1642148394281" duration="29728000" />
+      <workItem from="1642411746011" duration="1798000" />
+      <workItem from="1642413612111" duration="12504000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -24,8 +24,8 @@ public class BaseTest {
         driver.get("https://eurovaistine.lt/");
     }
 
-    @AfterClass
+   /* @AfterClass
     public void tearDown() {
         driver.quit();
-    }
+    }*/
 }
